@@ -9,10 +9,10 @@ A class should have only one reason to change.
 - EmailNotification is responsible solely for sending notifications.
 - Library depends on an abstraction (INotificationService) for notifications.
 
-✅ Benefits:
-- Each class has a single focus.
-- Easier to maintain and test.
-- Improves code readability.
+  ✅ Benefits:
+  - Each class has a single focus.
+  - Easier to maintain and test.
+  - Improves code readability.
 
 ##### 2️⃣ Open/Closed Principle (OCP)
 - Software entities should be open for extension, but closed for modification.
@@ -21,9 +21,9 @@ A class should have only one reason to change.
 - LibraryMember is an abstract class with the method BorrowLimit().
 - RegularMember and PremiumMember extend LibraryMember and override BorrowLimit().
 
-✅ Benefits:
-- New member types can be added without changing existing code.
-- Encourages scalability and flexibility.
+  ✅ Benefits:
+  - New member types can be added without changing existing code.
+  - Encourages scalability and flexibility.
 
 3️⃣ Liskov Substitution Principle (LSP)
 - Subtypes must be substitutable for their base types.
@@ -32,9 +32,9 @@ A class should have only one reason to change.
 - RegularMember and PremiumMember inherit from LibraryMember.
 - Can be used interchangeably wherever LibraryMember is expected.
 
-✅ Benefits:
-- Promotes polymorphism.
-- Ensures consistency across subtypes.
+  ✅ Benefits:
+  - Promotes polymorphism.
+  - Ensures consistency across subtypes.
 
 4️⃣ Interface Segregation Principle (ISP)
 - No client should be forced to depend on interfaces it does not use.
@@ -45,9 +45,9 @@ A class should have only one reason to change.
 - Student implements only IBorrowable.
 - Professor implements both IBorrowable and IReservable.
 
-✅ Benefits:
-- Reduces unused dependencies.
-- Easier to implement and maintain.
+  ✅ Benefits:
+  - Reduces unused dependencies.
+  - Easier to implement and maintain.
 
 5️⃣ Dependency Inversion Principle (DIP)
 - High-level modules should not depend on low-level modules. Both should depend on abstractions.
@@ -56,9 +56,9 @@ A class should have only one reason to change.
 - EmailNotification implements the INotificationService interface.
 - Library depends on the INotificationService abstraction instead of a concrete implementation.
 
-✅ Benefits:
-- Loosely coupled components.
-- Enhances flexibility and testability.
+  ✅ Benefits:
+  - Loosely coupled components.
+  - Enhances flexibility and testability.
 
 🔧 Technologies Used
 - C# / .NET (assumed)
